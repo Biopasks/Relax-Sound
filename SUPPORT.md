@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[![GitHub Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/sanot-tech/Relax-Sound/discussions)
+[![GitHub Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/discussions)
 
 </div>
 
@@ -32,7 +32,7 @@
 
 ### GitHub Discussions 💬
 
-Use [GitHub Discussions](https://github.com/sanot-tech/Relax-Sound/discussions) for:
+Use [GitHub Discussions](https://github.com/sanot-tech/RelaxSound/discussions) for:
 - General questions about the project
 - Feature ideas and feedback
 - Show and tell — share what you built
@@ -70,8 +70,8 @@ Use [GitHub Discussions](https://github.com/sanot-tech/Relax-Sound/discussions) 
 
 ### Before Creating an Issue
 
-- [ ] Search existing [issues](https://github.com/sanot-tech/Relax-Sound/issues) — yours may already be reported or answered
-- [ ] Search [discussions](https://github.com/sanot-tech/Relax-Sound/discussions) — your question may already be answered
+- [ ] Search existing [issues](https://github.com/sanot-tech/RelaxSound/issues) — yours may already be reported or answered
+- [ ] Search [discussions](https://github.com/sanot-tech/RelaxSound/discussions) — your question may already be answered
 - [ ] Check the [FAQ](#faq)
 - [ ] Make sure you are on the latest version
 

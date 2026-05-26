@@ -9,9 +9,9 @@
 
 <div align="center">
 
-[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/Relax-Sound/actions)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/Relax-Sound/actions)
-[![Security](https://img.shields.io/badge/security-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/Relax-Sound/actions)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
+[![Security](https://img.shields.io/badge/security-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square)](package.json)
 [![Platform](https://img.shields.io/badge/platform-web%20%7C%20mobile-brightgreen?style=flat-square)](https://relax-sound.vercel.app)
@@ -90,14 +90,14 @@
 ### Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/index.png" alt="Home Screen" width="240">
-  <img src="https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/player.png" alt="Player Screen" width="240">
+  <img src="https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/index.png" alt="Home Screen" width="240">
+  <img src="https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/player.png" alt="Player Screen" width="240">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/settings.png" alt="Settings" width="240">
-  <img src="https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/favorites.png" alt="Favorites" width="240">
-  <img src="https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/history.png" alt="History" width="240">
+  <img src="https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/settings.png" alt="Settings" width="240">
+  <img src="https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/favorites.png" alt="Favorites" width="240">
+  <img src="https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/history.png" alt="History" width="240">
 </p>
 
 ---
@@ -106,7 +106,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/sanot-tech/Relax-Sound.git
+git clone https://github.com/sanot-tech/RelaxSound.git
 cd relax-sound
 
 # Install dependencies
@@ -205,7 +205,7 @@ node --version      # Should be >=20.x
 npm --version       # Should be >=10.x
 
 # 2. Clone and enter the repository
-git clone https://github.com/sanot-tech/Relax-Sound.git
+git clone https://github.com/sanot-tech/RelaxSound.git
 cd relax-sound
 
 # 3. Install all dependencies
@@ -383,7 +383,7 @@ A: Place audio files in `public/audio/` and register them in the sound library c
 ## Support
 
 ### Community
-[![Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/sanot-tech/Relax-Sound/discussions)
+[![Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/discussions)
 
 ### Resources
 

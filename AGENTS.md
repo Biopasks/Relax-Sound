@@ -6,7 +6,7 @@ to understand the project Relax Sound — structure, conventions, workflows, and
 ## Project Overview
 
 - **Name**: Relax Sound — Premium Relaxation Sound App
-- **Repository**: [sanot-tech/Relax-Sound](https://github.com/sanot-tech/Relax-Sound)
+- **Repository**: [sanot-tech/RelaxSound](https://github.com/sanot-tech/RelaxSound)
 - **Production**: [relax-sound.vercel.app](https://relax-sound.vercel.app)
 - **Stack**: React 18 + TypeScript 5.5 (strict) + Vite 6 + Tailwind CSS 3.4
 - **Routing**: React Router 6 (client-side, lazy routes)
@@ -115,7 +115,7 @@ No dynamic CI/CD queries → no "failing" or "repo not found" errors.
 - Removed Discord channels and question.yml
 
 ### 10. Repository Migration
-- Moved from `Biopasks/Relax-Sound` → `sanot-tech/Relax-Sound`
+- Moved from `Biopasks/RelaxSound` → `sanot-tech/RelaxSound`
 - All URLs, badges, and references updated
 
 ## Key Conventions
@@ -204,7 +204,7 @@ No dynamic CI/CD queries → no "failing" or "repo not found" errors.
 1. `npx vite preview --port 4173` (start preview server)
 2. Run Playwright script with `addInitScript` setting localStorage for onboarding skip
 3. Screenshots saved to `screenshots/`
-4. Upload raw URLs: `https://raw.githubusercontent.com/sanot-tech/Relax-Sound/main/screenshots/xxx.png`
+4. Upload raw URLs: `https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/screenshots/xxx.png`
 
 ### Deploying
 1. `npm run build`

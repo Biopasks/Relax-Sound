@@ -9,8 +9,8 @@
 
 <div align="center">
 
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/sanot-tech/Relax-Sound/codeql.yml?branch=main&style=flat-square&logo=codeql&logoColor=white&label=CodeQL)](https://github.com/sanot-tech/Relax-Sound/actions/workflows/codeql.yml)
-[![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat-square&logo=dependabot&logoColor=white)](https://github.com/sanot-tech/Relax-Sound/security/dependabot)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/sanot-tech/RelaxSound/codeql.yml?branch=main&style=flat-square&logo=codeql&logoColor=white&label=CodeQL)](https://github.com/sanot-tech/RelaxSound/actions/workflows/codeql.yml)
+[![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat-square&logo=dependabot&logoColor=white)](https://github.com/sanot-tech/RelaxSound/security/dependabot)
 
 </div>
 
