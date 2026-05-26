@@ -9,11 +9,13 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/Biopasks/Relax-Sound?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![Version](https://img.shields.io/github/package-json/v/Biopasks/Relax-Sound?style=flat-square&logo=npm&logoColor=white)](package.json)
-[![GitHub Stars](https://img.shields.io/github/stars/Biopasks/Relax-Sound?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/stargazers)
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github)](https://github.com/Biopasks/Relax-Sound/pulls)
+[![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/Biopasks/Relax-Sound/actions)
+[![CodeQL](https://img.shields.io/badge/CodeQL-passing-brightgreen?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/actions)
+[![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen?style=flat-square&logo=codecov&logoColor=white)](https://github.com/Biopasks/Relax-Sound)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green?style=flat-square&logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square&logo=npm&logoColor=white)](package.json)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/pulls)
 
 <br/>
 
@@ -286,7 +288,7 @@ npm test -- --watch             # Watch mode
 
 ### Web (Vercel)
 
-[![Vercel](https://img.shields.io/badge/Vercel-Deploy-black?style=flat-square&logo=vercel&logoColor=white)](https://vercel.com)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-brightgreen?style=flat-square&logo=vercel&logoColor=white)](https://relax-sound.vercel.app)
 
 Deploy to Vercel with zero configuration:
 
