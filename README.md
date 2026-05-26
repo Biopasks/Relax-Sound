@@ -9,12 +9,22 @@
 
 <div align="center">
 
-[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
-[![Security](https://img.shields.io/badge/security-passing-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square)](package.json)
-[![Platform](https://img.shields.io/badge/platform-web%20%7C%20mobile-brightgreen?style=flat-square)](https://relax-sound.vercel.app)
+[![CI](https://img.shields.io/github/actions/workflow/status/sanot-tech/RelaxSound/ci.yml?branch=main&logo=github&label=CI&color=brightgreen&style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/sanot-tech/RelaxSound/codeql.yml?branch=main&logo=codeql&label=CodeQL&color=brightgreen&style=flat-square)](https://github.com/sanot-tech/RelaxSound/actions)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&logo=open-source-initiative)](LICENSE)
+[![Version](https://img.shields.io/github/v/release/sanot-tech/RelaxSound?logo=semver&label=version&color=brightgreen&style=flat-square)](https://github.com/sanot-tech/RelaxSound/releases)
+[![Platform](https://img.shields.io/badge/platform-web%20%7C%20mobile-brightgreen?style=flat-square&logo=smart)](https://relax-sound.vercel.app)
+[![Stars](https://img.shields.io/github/stars/sanot-tech/RelaxSound?style=flat-square&logo=starship&color=yellow)](https://github.com/sanot-tech/RelaxSound/stargazers)
+<br/>
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&style=flat-square)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&style=flat-square)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&style=flat-square)](https://vite.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-3.4-06B6D4?logo=tailwindcss&style=flat-square)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer-0055FF?logo=framer&style=flat-square)](https://www.framer.com/motion)
+[![Three.js](https://img.shields.io/badge/Three.js-000000?logo=three.js&style=flat-square)](https://threejs.org)
+[![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&style=flat-square)](https://capacitorjs.com)
+[![Howler.js](https://img.shields.io/badge/Howler.js-2.2-8800ff?style=flat-square)](https://howlerjs.com)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&style=flat-square)](https://ui.shadcn.com)
 
 <br/>
 
@@ -285,7 +295,7 @@ npm test -- --watch             # Watch mode
 
 ### Web (Vercel)
 
-[![Vercel](https://img.shields.io/badge/vercel-deployed-brightgreen?style=flat-square)](https://relax-sound.vercel.app)
+[![Vercel](https://img.shields.io/github/deployments/sanot-tech/RelaxSound/Production?logo=vercel&label=vercel&color=brightgreen&style=flat-square)](https://relax-sound.vercel.app)
 
 Deploy to Vercel with zero configuration:
 
@@ -383,7 +393,7 @@ A: Place audio files in `public/audio/` and register them in the sound library c
 ## Support
 
 ### Community
-[![Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/sanot-tech/RelaxSound/discussions)
+[![Discussions](https://img.shields.io/github/discussions/sanot-tech/RelaxSound?logo=github&label=discussions&color=brightgreen&style=flat-square)](https://github.com/sanot-tech/RelaxSound/discussions)
 
 ### Resources
 

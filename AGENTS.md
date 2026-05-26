@@ -158,6 +158,11 @@ Always audit the project before editing:
 3. **Verify all URLs work** — badge links, raw.githubusercontent.com, GitHub repo URLs
 4. **Confirm references match** — if a file is renamed/deleted, update every import and string reference
 5. **Remove local-only files** — `AI_RULES.md`, `template/`, personal notes, API dumps — use `.gitignore`
+6. **Replace emails** — all emails → `@sanot-tech` GitHub mentions
+7. **Badges** — use dynamic shields where possible, static green fallback; add tech stack badges
+8. **Issue templates** — enterprise-grade `.github/ISSUE_TEMPLATE/` + `PULL_REQUEST_TEMPLATE.md`
+9. **CI must pass** — fix lint/typecheck before pushing
+10. **Remote URL** — update after account rename
 
 ## Commands
 

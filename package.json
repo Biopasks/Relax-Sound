@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "lint": "eslint src/",
+    "lint": "eslint src/ --cache --cache-location node_modules/.cache/eslint/",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "preview:prod": "vite preview --port 4173"
