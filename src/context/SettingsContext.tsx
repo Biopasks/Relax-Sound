@@ -3,7 +3,25 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { Capacitor } from '@capacitor/core';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { Preferences } from '@capacitor/preferences';
-import { useColorScheme } from '@/hooks/use-color-scheme'; // Import hook to determine system theme
+import { useColorScheme } from '@/hooks/use-color-scheme';
+
+const isNative = Capacitor.isNativePlatform();
+
+async function getSettings(key: string): Promise<string | null> {
+  if (isNative) {
+    const { value } = await Preferences.get({ key });
+    return value;
+  }
+  return localStorage.getItem(key);
+}
+
+async function setSettings(key: string, value: string): Promise<void> {
+  if (isNative) {
+    await Preferences.set({ key, value });
+  } else {
+    localStorage.setItem(key, value);
+  }
+}
 
 type Theme = 'light' | 'dark' | 'system';
 
@@ -56,7 +74,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     const loadSettings = async () => {
       try {
-        const { value } = await Preferences.get({ key: SETTINGS_KEY });
+        const value = await getSettings(SETTINGS_KEY);
         if (value) {
           const savedSettings = JSON.parse(value);
           setVolume(savedSettings.volume ?? 0.5);
@@ -82,9 +100,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     const saveSettings = async () => {
       try {
-        await Preferences.set({
-          key: SETTINGS_KEY,
-          value: JSON.stringify({
+        await setSettings(SETTINGS_KEY, JSON.stringify({
             volume,
             theme,
             hapticFeedbackEnabled,
@@ -97,7 +113,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
             favoriteSounds, // NEW: Save favorite sounds
             unlockedPremiumSounds, // NEW: Save unlocked sounds
           }),
-        });
+        );
       } catch (e) {
         console.error("Failed to save settings:", e);
       }

@@ -9,14 +9,9 @@
 
 <div align="center">
 
-[![CI Pipeline](https://img.shields.io/github/actions/workflow/status/Biopasks/Relax-Sound/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI)](https://github.com/Biopasks/Relax-Sound/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/Biopasks/Relax-Sound/codeql.yml?branch=main&style=flat-square&logo=codeql&logoColor=white&label=CodeQL)](https://github.com/Biopasks/Relax-Sound/actions/workflows/codeql.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/Biopasks/Relax-Sound?style=flat-square&logo=codecov&logoColor=white)](https://codecov.io/gh/Biopasks/Relax-Sound)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square&logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![License](https://img.shields.io/github/license/Biopasks/Relax-Sound?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Version](https://img.shields.io/github/package-json/v/Biopasks/Relax-Sound?style=flat-square&logo=npm&logoColor=white)](package.json)
 [![GitHub Stars](https://img.shields.io/github/stars/Biopasks/Relax-Sound?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/Biopasks/Relax-Sound?style=flat-square&logo=contributorcovenant&logoColor=white)](https://github.com/Biopasks/Relax-Sound/graphs/contributors)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github)](https://github.com/Biopasks/Relax-Sound/pulls)
 
