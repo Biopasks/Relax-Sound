@@ -150,6 +150,15 @@ No dynamic CI/CD queries → no "failing" or "repo not found" errors.
 4. WebAudioManager handles Howl instances (preload, play, pause, stop, unload)
 5. IsNoiseLoading state shows GameLoadingBar in player
 
+## Pre-flight Checklist (Before Making Changes)
+
+Always audit the project before editing:
+1. **Scan for stale files** — check for orphaned duplicates (`src/src/`, stray files), unused assets, half-finished experiments
+2. **Check filenames** — no Cyrillic, no spaces, no typos in paths or names
+3. **Verify all URLs work** — badge links, raw.githubusercontent.com, GitHub repo URLs
+4. **Confirm references match** — if a file is renamed/deleted, update every import and string reference
+5. **Remove local-only files** — `AI_RULES.md`, `template/`, personal notes, API dumps — use `.gitignore`
+
 ## Commands
 
 | Command | Description |
