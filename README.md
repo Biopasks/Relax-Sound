@@ -9,13 +9,10 @@
 
 <div align="center">
 
-[![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/Biopasks/Relax-Sound/actions)
-[![CodeQL](https://img.shields.io/badge/CodeQL-passing-brightgreen?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/actions)
-[![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen?style=flat-square&logo=codecov&logoColor=white)](https://github.com/Biopasks/Relax-Sound)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green?style=flat-square&logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square&logo=npm&logoColor=white)](package.json)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/pulls)
+[![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)](https://github.com/Biopasks/Relax-Sound)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square)](package.json)
+[![Platform](https://img.shields.io/badge/platform-web%20%7C%20mobile-brightgreen?style=flat-square)](https://relax-sound.vercel.app)
 
 <br/>
 
@@ -288,7 +285,7 @@ npm test -- --watch             # Watch mode
 
 ### Web (Vercel)
 
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-brightgreen?style=flat-square&logo=vercel&logoColor=white)](https://relax-sound.vercel.app)
+[![Vercel](https://img.shields.io/badge/vercel-deployed-brightgreen?style=flat-square)](https://relax-sound.vercel.app)
 
 Deploy to Vercel with zero configuration:
 
@@ -386,7 +383,7 @@ A: Place audio files in `public/audio/` and register them in the sound library c
 ## Support
 
 ### Community
-[![GitHub Discussions](https://img.shields.io/github/discussions/Biopasks/Relax-Sound?style=flat-square&logo=github&logoColor=white)](https://github.com/Biopasks/Relax-Sound/discussions)
+[![Discussions](https://img.shields.io/badge/discussions-active-brightgreen?style=flat-square)](https://github.com/Biopasks/Relax-Sound/discussions)
 
 ### Resources
 
