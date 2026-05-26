@@ -91,6 +91,12 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+# ─── Generated / Auxiliary ──────────────────────────────────────────────────
+all-src.txt
+leonardo-prompt-*.txt
+relax-sound/
+relaxsound-*.html
+
 # ─── Documentation ───────────────────────────────────────────────────────────
 site/
 _site/
