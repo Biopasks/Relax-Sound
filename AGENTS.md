@@ -3,7 +3,7 @@
 This file provides context for AI coding assistants (opencode, Cursor, Windsurf, etc.)
 to understand the project Relax Sound — structure, conventions, workflows, and key decisions made.
 
-> **Reusable template** for other projects: [`template/AGENTS.md`](template/AGENTS.md)
+> **Reusable template** for other projects: [`../../new/template/AGENTS.md`](../../new/template/AGENTS.md) (local)
 
 ## Project Overview
 
@@ -150,19 +150,109 @@ No dynamic CI/CD queries → no "failing" or "repo not found" errors.
 4. WebAudioManager handles Howl instances (preload, play, pause, stop, unload)
 5. IsNoiseLoading state shows GameLoadingBar in player
 
-## Pre-flight Checklist (Before Making Changes)
+## LLM Automation Rules — MUST ALWAYS FOLLOW
 
-Always audit the project before editing:
-1. **Scan for stale files** — check for orphaned duplicates (`src/src/`, stray files), unused assets, half-finished experiments
-2. **Check filenames** — no Cyrillic, no spaces, no typos in paths or names
-3. **Verify all URLs work** — badge links, raw.githubusercontent.com, GitHub repo URLs
-4. **Confirm references match** — if a file is renamed/deleted, update every import and string reference
-5. **Remove local-only files** — `AI_RULES.md`, `template/`, personal notes, API dumps — use `.gitignore`
-6. **Replace emails** — all emails → `@sanot-tech` GitHub mentions
-7. **Badges** — use dynamic shields where possible, static green fallback; add tech stack badges
-8. **Issue templates** — enterprise-grade `.github/ISSUE_TEMPLATE/` + `PULL_REQUEST_TEMPLATE.md`
-9. **CI must pass** — fix lint/typecheck before pushing
-10. **Remote URL** — update after account rename
+These rules are **MANDATORY**. Every time you touch this project, verify ALL rules below. Do not skip, do not assume, do not forget.
+
+### 0. Pre-flight Audit (Run First, Every Time)
+1. **Scan for stale files** — orphaned duplicates (`src/src/`), unused assets, half-finished experiments, personal notes, API dumps
+2. **Check filenames** — **NO Cyrillic, NO spaces, NO typos** (e.g., `Sapce` → `Space`)
+3. **Verify ALL URLs** — badge URLs, `raw.githubusercontent.com`, repo URLs, vercel.app — every link must resolve (200, not 403/404)
+4. **Confirm ALL references match** — if a file is renamed/deleted, update EVERY import, every string reference, every config
+5. **Remove ALL local-only files** — `AI_RULES.md`, `template/`, `.env` with tokens, personal notes, API dumps → add to `.gitignore`
+6. **Kill duplicates** — check for `src/src/` or similar nested duplication. Check for stray copies of files.
+7. **Replace ALL email addresses** — every single email → `@sanot-tech` GitHub mention (the login, not `@Sanot`)
+8. **Replace ALL old account references** — `Biopasks` → `sanot-tech` everywhere (code, URLs, badges, configs, git remotes)
+
+### 1. Badges Checklist
+9. **CI/CD badge** — dynamic `img.shields.io/github/actions/workflow/status` — must show passing
+10. **Test coverage** — static 15 tests badge with `brightgreen`
+11. **Security** — static `security-passing-brightgreen` (OpenSSF not configured)
+12. **Stack badges** — ALL tech: React, TypeScript, Vite, Tailwind, Framer Motion, Three.js, Capacitor, Howler.js, shadcn/ui
+13. **Version badge** — dynamic `github/v/release` (v1.0.0 exists)
+14. **Stars badge** — dynamic `github/stars` with `yellow`
+15. **License badge** — static MIT, color `brightgreen`
+16. **Deployment badge** — use static `https://img.shields.io/badge/deployed-vercel-brightgreen?logo=vercel` (NOT `github/deployments` — shows "environment not found")
+17. **Discussions badge** — `https://img.shields.io/github/discussions/sanot-tech/RelaxSound?logo=github&color=brightgreen`
+18. **Verify EVERY badge renders** — curl each. Any 403/404 → static fallback
+19. **All badges must be green** — `brightgreen` or official brand color
+
+### 2. Footer Standards
+20. **Back to top** — `[⬅️ Back to Top](#readme)` badge/link
+21. **Made with love** — `<b>Built with ❤️ by <a href="https://github.com/sanot-tech">Sanot</a></b>`
+22. **Star CTA** — encourage starring
+23. **Copyright** — `Copyright © 2026 sanot-tech` (display `Sanot`)
+24. **Display text `sanot-tech` → `Sanot`** — in copyright, footers; links stay on `sanot-tech`
+
+### 3. Issue & PR Templates — All Types Required
+25. **BUG REPORT** — `bug_report.yml` with: prerequisites, OS/Browser/Component dropdowns, version, description, steps (numbered), expected vs actual, logs
+26. **FEATURE REQUEST** — `feature_request.yml` with: prerequisites, category dropdown, priority dropdown, problem, solution, alternatives, impact
+27. **DOCUMENTATION** — `documentation.yml` with: type dropdown, area dropdown, description, suggestion
+28. **PERFORMANCE** — `performance.yml` with: area dropdown, device class dropdown, description, metrics, steps
+29. **SECURITY** — `security.yml` with: severity dropdown, vuln type dropdown, description, impact, remediation note
+30. **QUESTION** — `question.yml` with: category dropdown, question, context; links to Discussions
+31. **EPIC** — `epic.yml` with: timeline, priority, overview, objectives, task breakdown, dependencies
+32. **TASK** — `task.yml` with: type dropdown, description, acceptance criteria, effort
+33. **DESIGN** — `design.yml` with: type dropdown, priority, current state (screenshots), desired state, implementation
+34. **REGRESSION** — `regression.yml` with: last/working version, description, steps, expected vs actual
+35. **REFACTORING** — `refactoring.yml` with: area dropdown, motivation dropdown, description, acceptance criteria
+36. **CONFIG** — `config.yml` with: `blank_issues_enabled: false`, links to Docs, Discussions, Ideas, Q&A, Security, Changelog
+37. **PR TEMPLATE** — `PULL_REQUEST_TEMPLATE.md` with checklist (self-review, tests, lint, typecheck, breaking changes)
+38. **ALL templates must be YAML forms** — NEVER plain text. Use dropdowns, checkboxes, validation. Rich emoji headers.
+39. **FUNDING.yml** — `.github/FUNDING.yml` with `github: [sanot-tech]`, remove placeholder services
+
+### 4. Community Files
+40. **LICENSE** — MIT, `Sanot` as copyright holder
+41. **CONTRIBUTING.md** — how to contribute, setup, code style, PR process
+42. **CODE_OF_CONDUCT.md** — Contributor Covenant v2.1
+43. **SECURITY.md** — how to report vulnerabilities
+44. **`.gitignore`** — `node_modules/`, `dist/`, `.vite/`, `.env`, `.eslintcache`, local-only files
+45. **CI workflow** — `.github/workflows/ci.yml` — must pass
+46. **Dependabot** — `.github/dependabot.yml` for npm + Actions
+47. **Discussions** — verify enabled on GitHub repo
+
+### 5. README Screenshots
+48. **Screenshots required** — take and add screenshots of main pages
+49. **PNG, saved to `screenshots/`** — via Playwright + vite preview
+50. **Use `raw.githubusercontent.com` URLs** for serving
+
+### 5a. Architecture Diagram — ASCII Art
+51. **Must have beautiful layered ASCII diagram** in Architecture section (like TaskFlow)
+52. **Box-drawing characters**: `╔╗║╚╝═` or `┌┐│└┘─` — consistent, not mixed
+53. **Layers**: Presentation → Application → Data/Audio. Show 3 columns per layer
+54. **Follow with Layered Design table** explaining each layer's responsibility + tech
+55. **Keep directory tree below the diagram** — NOT instead of it
+
+### 5b. Acknowledgments Section
+56. **Must have `## 🙏 Acknowledgments`** before License
+57. **Table with: Category | Technology (linked) | Purpose**
+58. **List ALL significant deps**: React, TS, Vite, Tailwind, Framer, Three.js, Howler.js, Capacitor, shadcn/ui, Lucide, ESLint, GitHub Actions, Vercel
+59. **End with "Special thanks" paragraph**
+
+### 6. Features with Spoiler Categories
+60. **Features MUST use `<details>` collapsible blocks** organized by theme
+61. **Canonical categories**: 📦 Core Platform, 🎨 User Experience, 🔒 Security, ⚙️ Dev Experience
+62. **Alternative categories** based on project type (audio: 🎵 Audio Engine, 🎚️ Mixer, 👁️ Visualizer, 📱 Mobile)
+63. **Each feature**: emoji + bold title + concise single-line description
+64. **3-8 features per category**, at least 3 categories
+
+### 7. Vercel Deployment
+65. **Live at https://relax-sound.vercel.app** — keep deployed
+66. **`npx vercel --prod --token $VERCEL_TOKEN --yes`**
+67. **Verify GitHub repo is linked** in Vercel project settings
+
+### 8. CI & Quality
+68. **`npm run build` must succeed**
+69. **`npx tsc --noEmit` must pass** — zero errors
+70. **`npm run lint` must pass** — zero errors
+71. **Link check** — every badge, every URL, every reference
+
+### 9. Final Verification
+72. **Check every link in README** — click/browse every badge, every anchor
+73. **GitHub mentions** — use `@sanot-tech` (login), NOT `@Sanot`
+74. **Display text** — `sanot-tech` → `Sanot` in user-facing text
+75. **No placeholder values** — `YOUR_USERNAME`, `your-email@example.com`, etc. → replaced
+76. **Commit check** — no tokens, no .env, meaningful message
 
 ## Commands
 
@@ -188,7 +278,7 @@ This file is designed to be consumed by AI coding assistants. To make it availab
    ```
 4. **Keep in sync** — Update this file when you change stack, structure, or workflows
 
-For a reusable template that can be adapted to any project, see [`template/AGENTS.md`](https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/template/AGENTS.md).
+For a reusable template that can be adapted to any project, see [`../../new/template/AGENTS.md`](../../new/template/AGENTS.md).
 
 ## Important Files
 

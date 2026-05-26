@@ -15,6 +15,7 @@
 [![Version](https://img.shields.io/github/v/release/sanot-tech/RelaxSound?logo=semver&label=version&color=brightgreen&style=flat-square)](https://github.com/sanot-tech/RelaxSound/releases)
 [![Platform](https://img.shields.io/badge/platform-web%20%7C%20mobile-brightgreen?style=flat-square&logo=smart)](https://relax-sound.vercel.app)
 [![Stars](https://img.shields.io/github/stars/sanot-tech/RelaxSound?style=flat-square&logo=starship&color=yellow)](https://github.com/sanot-tech/RelaxSound/stargazers)
+[![Discussions](https://img.shields.io/github/discussions/sanot-tech/RelaxSound?logo=github&color=brightgreen&style=flat-square&label=discussions)](https://github.com/sanot-tech/RelaxSound/discussions)
 <br/>
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&style=flat-square)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&style=flat-square)](https://www.typescriptlang.org)
@@ -42,6 +43,7 @@
 [Contributing](#contributing) •
 [Security](#security) •
 [FAQ](#faq) •
+[Acknowledgments](#acknowledgments) •
 [Support](#support) •
 [License](#license)
 
@@ -137,63 +139,83 @@ npm run preview
 ## Architecture
 
 ```
+╔══════════════════════════════════════════════════════════════╗
+║                       RELAXSOUND                              ║
+║  ┌────────────────────────────────────────────────────────┐  ║
+║  │                  PRESENTATION LAYER                     │  ║
+║  │  ┌─────────────┐  ┌─────────────┐  ┌────────────────┐  │  ║
+║  │  │    Pages    │  │ Components  │  │  Screens       │  │  ║
+║  │  │ • SoundSel  │  │ • SoundCard │  │ • Onboarding   │  │  ║
+║  │  │ • Player    │  │ • MixerPanel│  │ • Loading      │  │  ║
+║  │  │ • Settings  │  │ • TimerBar  │  │ • VinylPlayer  │  │  ║
+║  │  └──────┬──────┘  └──────┬──────┘  └───────┬────────┘  │  ║
+║  └─────────┼────────────────┼────────────────┼────────────┘  ║
+║            │                │                │                ║
+║  ┌─────────┴────────────────┴────────────────┴────────────┐  ║
+║  │                 APPLICATION LAYER                       │  ║
+║  │  ┌─────────────┐  ┌─────────────┐  ┌────────────────┐  │  ║
+║  │  │   Hooks     │  │   Contexts  │  │    Utils       │  │  ║
+║  │  │ • useAudio  │  │ • SoundCtx  │  │ • cn()         │  │  ║
+║  │  │ • useTimer  │  │ • SettingCtx│  │ • formatters   │  │  ║
+║  │  │ • usePreldr │  │ • SessionCtx│  │ • apiHelpers   │  │  ║
+║  │  │ • useAnim   │  │             │  │ • validators   │  │  ║
+║  │  └──────┬──────┘  └──────┬──────┘  └───────┬────────┘  │  ║
+║  └─────────┼────────────────┼────────────────┼────────────┘  ║
+║            │                │                │                ║
+║  ┌─────────┴────────────────┴────────────────┴────────────┐  ║
+║  │                   AUDIO / DATA LAYER                    │  ║
+║  │  ┌─────────────────┐  ┌─────────────┐  ┌────────────┐  │  ║
+║  │  │  Audio Engine   │  │ Persistence │  │   Native   │  │  ║
+║  │  │ • Howler.js     │  │ • localStor │  │ • Capacitor│  │  ║
+║  │  │ • WebAudio API  │  │ • Settings  │  │ • Native   │  │  ║
+║  │  │ • WebAudioMgmt  │  │ • Favorites │  │   Audio    │  │  ║
+║  │  │ • Preload Queue │  │ • Sessions  │  │ • AdMob    │  │  ║
+║  │  └─────────────────┘  └─────────────┘  └────────────┘  │  ║
+║  └─────────────────────────────────────────────────────────┘  ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+```
 relax-sound/
 ├── .github/                          # GitHub configuration
 │   ├── workflows/                    # CI/CD pipeline definitions
-│   │   ├── ci.yml                    # Continuous integration
-│   │   ├── codeql.yml                # Security analysis
-│   │   ├── release.yml               # Release & deployment
-│   │   ├── stale.yml                 # Issue stale management
-│   │   ├── auto-label.yml            # PR auto-labeling
-│   │   └── welcome.yml               # New contributor welcome
 │   ├── ISSUE_TEMPLATE/               # Structured issue forms
-│   │   ├── bug_report.yml
-│   │   ├── feature_request.yml
-│   │   └── config.yml
 │   ├── dependabot.yml                # Dependency automation
 │   ├── CODEOWNERS                    # Code ownership rules
 │   └── PULL_REQUEST_TEMPLATE.md      # PR submission checklist
-├── public/                           # Static assets
-│   ├── audio/                        # Sound sample files
-│   ├── font/                         # Custom fonts
-│   └── favicon.ico                   # Site favicon
+├── public/audio/                     # Sound sample files
 ├── src/                              # Application source code
-│   ├── assets/                       # Audio definitions & assets
+│   ├── assets/audio/                 # Audio definitions & index
 │   ├── capacitor-plugins/            # Capacitor plugin bridges
-│   ├── components/                   # Reusable UI components
+│   ├── components/                   # UI components
 │   │   ├── ui/                       # shadcn/ui primitives
 │   │   ├── player/                   # Player panel components
 │   │   └── three/                    # Three.js 3D components
 │   ├── context/                      # React context providers
 │   ├── hooks/                        # Custom React hooks
-│   │   └── animations/               # Animation effect hooks
-│   ├── lib/                          # Utility functions & helpers
+│   ├── lib/                          # Utility functions
 │   ├── pages/                        # Route-level page components
-│   ├── utils/                        # Utility functions
-│   ├── App.tsx                       # Root application component
-│   ├── main.tsx                      # Application entry point
-│   └── globals.css                   # Global styles & Tailwind
-├── screenshots/                      # App screenshots for README
+│   ├── App.tsx                       # Root component
+│   └── main.tsx                      # Entry point
 ├── capacitor.config.ts               # Capacitor configuration
-├── components.json                   # shadcn/ui configuration
 ├── tailwind.config.ts                # Tailwind CSS configuration
-├── tsconfig.json                     # TypeScript configuration
 ├── vite.config.ts                    # Vite build configuration
 ├── package.json                      # Project manifest
-├── .gitignore                        # Git exclusion rules
-├── .editorconfig                     # Editor consistency
-├── .prettierrc                       # Code formatting rules
-├── .npmrc                            # npm configuration
 ├── vercel.json                       # Vercel deployment config
-├── CONTRIBUTING.md                   # Contributor guide
-├── CODE_OF_CONDUCT.md                # Community standards
-├── SECURITY.md                       # Security policy
-├── SUPPORT.md                        # Support channels
-├── CHANGELOG.md                      # Version history
 ├── AGENTS.md                         # AI assistant guide
 ├── LICENSE                           # MIT license
 └── README.md                         # This file
 ```
+
+### Layered Design
+
+| Layer | Responsibility | Technology |
+|-------|---------------|------------|
+| **Presentation** | UI rendering, gestures, view state | React 18 + Framer Motion + Three.js |
+| **Application** | Business logic, state orchestration | React Context + Custom Hooks |
+| **Audio Engine** | Playback, mixing, preloading | Howler.js + Web Audio API |
+| **Data** | Persistence, settings, sessions | localStorage + Capacitor Preferences |
+| **Native Bridge** | Mobile APIs, native audio, ads | Capacitor plugins |
 
 ---
 
@@ -295,7 +317,7 @@ npm test -- --watch             # Watch mode
 
 ### Web (Vercel)
 
-[![Vercel](https://img.shields.io/github/deployments/sanot-tech/RelaxSound/Production?logo=vercel&label=vercel&color=brightgreen&style=flat-square)](https://relax-sound.vercel.app)
+[![Vercel](https://img.shields.io/badge/deployed-vercel-brightgreen?logo=vercel&style=flat-square)](https://relax-sound.vercel.app)
 
 Deploy to Vercel with zero configuration:
 
@@ -403,6 +425,32 @@ A: Place audio files in `public/audio/` and register them in the sound library c
 ### Professional Support
 
 For enterprise support, custom integrations, and SLAs, please contact us at [@sanot-tech](https://github.com/sanot-tech).
+
+---
+
+<a name="acknowledgments"></a>
+## 🙏 Acknowledgments
+
+This project stands on the shoulders of open-source giants:
+
+| Category | Technology | Purpose |
+|----------|-----------|---------|
+| **UI Framework** | [React 18](https://react.dev/) | Component-based UI architecture |
+| **Language** | [TypeScript 5.5](https://www.typescriptlang.org/) | Type safety & developer experience |
+| **Build Tooling** | [Vite 6](https://vite.dev/) | Fast development & optimized builds |
+| **Styling** | [Tailwind CSS 3.4](https://tailwindcss.com/) | Utility-first responsive design |
+| **Animation** | [Framer Motion](https://www.framer.com/motion/) | Declarative animations & gestures |
+| **3D Graphics** | [Three.js](https://threejs.org/) | Real-time audio visualizations |
+| **Audio Engine** | [Howler.js](https://howlerjs.com/) | Cross-browser audio playback |
+| **Mobile Runtime** | [Capacitor](https://capacitorjs.com/) | Native iOS/Android bridge |
+| **UI Components** | [shadcn/ui](https://ui.shadcn.com/) | Accessible primitives & Radix UI |
+| **Icons** | [Lucide](https://lucide.dev/) | Consistent icon set |
+| **Font** | [Geist](https://vercel.com/font) | Modern sans-serif typeface |
+| **Linting** | [ESLint](https://eslint.org/) | Code quality & consistency |
+| **CI/CD** | [GitHub Actions](https://github.com/features/actions) | Automated testing & deployment |
+| **Hosting** | [Vercel](https://vercel.com/) | Global edge deployment |
+
+Special thanks to the open-source community for making projects like this possible.
 
 ---
 
