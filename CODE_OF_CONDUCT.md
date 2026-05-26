@@ -53,9 +53,9 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 
 | Role | Contact |
 |------|---------|
-| Project Lead | [@Sanot](https://github.com/Sanot) |
-| Community Manager | [@Sanot](https://github.com/Sanot) |
-| Code of Conduct Team | [@Sanot](https://github.com/Sanot) |
+| Project Lead | [@sanot-tech](https://github.com/sanot-tech) |
+| Community Manager | [@sanot-tech](https://github.com/sanot-tech) |
+| Code of Conduct Team | [@sanot-tech](https://github.com/sanot-tech) |
 
 ---
 
@@ -75,7 +75,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ### 1. Report
 
-Reports can be submitted by mentioning **[@Sanot](https://github.com/Sanot)** in a GitHub issue or discussion. All reports will be reviewed and investigated promptly and fairly. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+Reports can be submitted by mentioning **[@sanot-tech](https://github.com/sanot-tech)** in a GitHub issue or discussion. All reports will be reviewed and investigated promptly and fairly. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
 Reports should include:
 - Your contact information
@@ -115,7 +115,7 @@ The decision will be communicated to:
 
 ### 5. Appeal
 
-Appeals can be submitted by mentioning **[@Sanot](https://github.com/Sanot)** in a GitHub issue within 14 days of the decision. Appeals will be reviewed by an independent party not involved in the original investigation.
+Appeals can be submitted by mentioning **[@sanot-tech](https://github.com/sanot-tech)** in a GitHub issue within 14 days of the decision. Appeals will be reviewed by an independent party not involved in the original investigation.
 
 ---
 

@@ -56,7 +56,7 @@ Use GitHub's [Private Vulnerability Reporting](https://docs.github.com/en/code-s
 2. Click **Report a vulnerability**
 3. Fill in the details
 
-You can also mention **@Sanot** in a new issue for non-critical reports.
+You can also mention **@sanot-tech** in a new issue for non-critical reports.
 
 ```
 Subject: [Security Vulnerability] <Brief Description>
@@ -74,9 +74,9 @@ Body:
 - **Affected Components**: Files, endpoints, or modules affected
 ```
 
-### Method 2: GitHub Issue with @Sanot
+### Method 2: GitHub Issue with @sanot-tech
 
-For non-critical concerns, open an issue and mention **@Sanot** for visibility.
+For non-critical concerns, open an issue and mention **@sanot-tech** for visibility.
 3. Fill out the form with the details of the vulnerability
 
 ### Response Times
@@ -182,7 +182,7 @@ Dependencies with the following characteristics are prohibited:
 
 ## Contact
 
-- **Security Issues**: [@Sanot](https://github.com/Sanot) via GitHub Issues
+- **Security Issues**: [@sanot-tech](https://github.com/sanot-tech) via GitHub Issues
 
 ---
 

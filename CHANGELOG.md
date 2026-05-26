@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Highlights |
 |---------|------|------------|
-| [1.0.0](https://github.com/Sanot/relax-sound/releases/tag/v1.0.0) | 2026-05-26 | Initial release |
+| [1.0.0](https://github.com/sanot-tech/relax-sound/releases/tag/v1.0.0) | 2026-05-26 | Initial release |
 
 ## Release Cadence
 
@@ -42,5 +42,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 <p align="center">
-  <sub>See the full release history on [GitHub Releases](https://github.com/Sanot/relax-sound/releases).</sub>
+  <sub>See the full release history on [GitHub Releases](https://github.com/sanot-tech/relax-sound/releases).</sub>
 </p>

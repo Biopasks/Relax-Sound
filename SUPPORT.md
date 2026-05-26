@@ -98,7 +98,7 @@ For organizations that require:
 - **Custom development** — Sound pack creation and feature customization
 - **Integration support** — Help integrating with your systems
 
-**Contact:** [@Sanot](https://github.com/Sanot) via GitHub Issues or Discussions
+**Contact:** [@sanot-tech](https://github.com/sanot-tech) via GitHub Issues or Discussions
 
 ---
 
@@ -119,7 +119,7 @@ For organizations that require:
 
 ### Enterprise Contact
 
-- **Contact:** [@Sanot](https://github.com/Sanot) on GitHub
+- **Contact:** [@sanot-tech](https://github.com/sanot-tech) on GitHub
 
 ---
 

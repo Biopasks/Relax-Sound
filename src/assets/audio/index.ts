@@ -352,7 +352,7 @@ export const sounds: Sound[] = [
   { 
     id: 'space', 
     name: 'Space', 
-    fileName: 'Sapce.mp3', 
+    fileName: 'Space.mp3', 
     icon: Moon, 
     isPremium: false, 
     loop: true, 
@@ -396,6 +396,6 @@ export const sounds: Sound[] = [
       'universe', 'astronomy', 'mystery', 'dreamy', 'futuristic', 'deep space', 'soundscape',
       'stress relief', 'sleep', 'tranquility', 'healing', 'mindfulness'
     ],
-    audioSrc: '/audio/Sapce.mp3',
+    audioSrc: '/audio/Space.mp3',
   },
 ];

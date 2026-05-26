@@ -392,7 +392,7 @@ A: Place audio files in `public/audio/` and register them in the sound library c
 
 ### Professional Support
 
-For enterprise support, custom integrations, and SLAs, please contact us at [@Sanot](mailto:@Sanot).
+For enterprise support, custom integrations, and SLAs, please contact us at [@sanot-tech](https://github.com/sanot-tech).
 
 ---
 
@@ -403,7 +403,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 ---
 
 <p align="center">
-  <b>Built with ❤️ by <a href="https://github.com/Sanot">Sanot</a></b>
+  <b>Built with ❤️ by <a href="https://github.com/sanot-tech">Sanot</a></b>
   <br/>
   <sub>Copyright © 2026 Sanot. All rights reserved.</sub>
 </p>

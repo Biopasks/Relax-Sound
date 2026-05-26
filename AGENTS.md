@@ -1,7 +1,9 @@
 # AGENTS.md — AI Assistant Guide
 
 This file provides context for AI coding assistants (opencode, Cursor, Windsurf, etc.)
-to understand the project Relax Sound — structure, conventions, workflows, and all changes made.
+to understand the project Relax Sound — structure, conventions, workflows, and key decisions made.
+
+> **Reusable template** for other projects: [`template/AGENTS.md`](template/AGENTS.md)
 
 ## Project Overview
 
@@ -29,7 +31,7 @@ relax-sound/
 │   ├── workflows/               # CI/CD: ci.yml, codeql.yml, release.yml, stale.yml, welcome.yml, auto-label.yml
 │   ├── ISSUE_TEMPLATE/          # bug_report.yml, feature_request.yml, config.yml
 │   ├── dependabot.yml
-│   ├── CODEOWNERS               # @Sanot
+│   ├── CODEOWNERS               # @sanot-tech
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── public/                      # Static assets
 │   ├── audio/                   # MP3 sound files (preloaded on idle)
@@ -71,7 +73,7 @@ relax-sound/
 
 ### 1. Email → GitHub Contact
 All email addresses (`korobgreenfield@gmail.com`, `@relaxsound.app`, `noreply.github.com`)
-replaced with **@Sanot** GitHub mentions. Contact via GitHub Issues/Discussions.
+replaced with **@sanot-tech** GitHub mentions. Contact via GitHub Issues/Discussions.
 
 ### 2. Badges (100% Static Green)
 All shields.io badges are static green (`brightgreen`):
@@ -159,6 +161,20 @@ No dynamic CI/CD queries → no "failing" or "repo not found" errors.
 | `npm run lint` | ESLint (src/ only) |
 | `npx tsc --noEmit` | TypeScript check |
 | `npx vercel --prod` | Deploy to Vercel |
+
+## GitHub LLM Setup
+
+This file is designed to be consumed by AI coding assistants. To make it available via GitHub:
+
+1. **Push to GitHub** — already at `sanot-tech/RelaxSound`
+2. **Raw URL** — `https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/AGENTS.md`
+3. **Usage in prompts** — When starting an AI session, reference it:
+   ```
+   Read AGENTS.md for full project context before making changes.
+   ```
+4. **Keep in sync** — Update this file when you change stack, structure, or workflows
+
+For a reusable template that can be adapted to any project, see [`template/AGENTS.md`](https://raw.githubusercontent.com/sanot-tech/RelaxSound/main/template/AGENTS.md).
 
 ## Important Files
 
