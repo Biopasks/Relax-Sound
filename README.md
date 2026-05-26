@@ -94,7 +94,7 @@
 ## Demo
 
 <p align="center">
-  <img src="docs/assets/demo-hero.gif" alt="Relax Sound Demo" width="720">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/docs/assets/demo-hero.gif" alt="Relax Sound Demo" width="720">
   <br/>
   <em>Relax Sound — Premium relaxation experience across all devices.</em>
 </p>
@@ -102,15 +102,15 @@
 ### Screenshots
 
 <p align="center">
-  <img src="screenshots/index.png" alt="Home Screen" width="240">
-  <img src="screenshots/player.png" alt="Player Screen" width="240">
-  <img src="screenshots/sound-selection.png" alt="Sound Selection" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/index.png" alt="Home Screen" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/player.png" alt="Player Screen" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/sound-selection.png" alt="Sound Selection" width="240">
 </p>
 
 <p align="center">
-  <img src="screenshots/settings.png" alt="Settings" width="240">
-  <img src="screenshots/favorites.png" alt="Favorites" width="240">
-  <img src="screenshots/history.png" alt="History" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/settings.png" alt="Settings" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/favorites.png" alt="Favorites" width="240">
+  <img src="https://raw.githubusercontent.com/Biopasks/relax-sound/main/screenshots/history.png" alt="History" width="240">
 </p>
 
 ---
